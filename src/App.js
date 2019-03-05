@@ -8,6 +8,7 @@ import 'bulma/css/bulma.css'
 
 import Layout from './containers/Layout';
 import MainHeader from './components/mainheader';
+import Loader from './components/loader';
 // import Card from './components/card';
 
 library.add(faIgloo)
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout >
+          <Loader />
           <MainHeader />
         </Layout>
       </div>
