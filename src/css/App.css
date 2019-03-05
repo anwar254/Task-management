@@ -1,4 +1,35 @@
 .main-container{
   background: #f2f2f0;
-  color: white
+}
+.tsk-card{
+  background: #fff;
+  padding: 10px;
+  width: 20%;
+  border-radius: 4px;
+  color: inherit;
+}
+.tsk-card .tsk-card-header{
+  display: flex;
+  padding: 5px;
+  border-bottom: 2px solid #f6f6f6;
+}
+.tsk-card .tsk-card-header h3{
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.tsk-card .tsk-card-content{
+  margin-bottom: 10px;
+}
+.tsk-card .tsk-card-content p{
+  font-size: 13px;
+  color: rgb(115, 115, 115);
+}
+.tsk-card .tsk-card-footer p{
+  font-weight: bolder;
+  font-size: 12px;
+}
+.tsk-card .tsk-card-footer span{
+  font-weight: lighter!important;
 }
