@@ -4,6 +4,8 @@ class Ball{
 		this.elem = elem;
 		this.x = x;
 		this.y = y;
+		this.cx = this.x;
+		this.cy = this.elemH.height;
 		this.dx = dx;
 		this.dy = dy;
 		this.radious = radious;
@@ -17,7 +19,9 @@ class Ball{
 	}
 
 	update(){
-		if( this.y<0 || this.y>this.elemH.height) this.dy=-this.dy;
+		if( this.y<0 || this.y>this.elemH.height) {
+			this.dy=-this.dy;
+		};
 		this.y += this.dy;
 		this.draw()
 		console.log(this.radious)

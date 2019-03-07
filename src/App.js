@@ -14,11 +14,20 @@ import Loader from './components/loader';
 library.add(faIgloo)
 
 class App extends Component {
+  componentDidMount(){
+    const loader = document.getElementById('bounce')
+    
+    window.onload = () => {
+      setTimeout(()=>{ 
+        loader.style.display = "none";
+      },2000)
+    }
+  }
   render() {
     return (
       <div className="App">
-        <Layout >
-          <Loader />
+        <Layout>
+          <Loader id="bounce"/>
           <MainHeader />
         </Layout>
       </div>
